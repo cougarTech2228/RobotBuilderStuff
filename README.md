@@ -18,9 +18,9 @@
  
  Start VSCode and open the newly renamed folder (e.g. "InfiniteRecharge"). You'll see a few errors and that's to be expected because we need to rename a few things in the Java project. 
  
- In the project tree, you'll see an entry/node labeled "CTRobotTemplate". Rename that entry/node to your new project name (i.e., "InfiniteRecharge"). 
+ In the project tree, you'll see an entry/node labeled "CTRobotTemplate". Right-click on the entry/node and rename it to your new project name (i.e., "InfiniteRecharge"). 
  
- There are still a few items in the project that need to be renamed. To do this, select "Replace in Files" from the VS Code Edit menu. Search for "CTRobotTemplate" and Replace that string with "InfiniteRecharge" or whatever you named your new project. The code should build successfully now.
+ There are still a few items in the project that need to be renamed. To do this, select "Replace in Files" from the VS Code Edit menu. Search for "CTRobotTemplate" and Replace that string with "InfiniteRecharge" or whatever you named your new project. There should be 11 occurrences in 7 files that get replaced. The code should build successfully now.
  
  Start RobotBuilder and open the newly renamed project file (e.g., "InfiniteRecharge.yaml"). At this point you should be able to update your project by adding Subsystems, Commands, Inputs, Outputs, etc. and then generate code for your Java project.
  
