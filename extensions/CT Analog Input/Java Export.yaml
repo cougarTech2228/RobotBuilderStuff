@@ -1,0 +1,5 @@
+CT Analog Input:
+  Defaults: "Component,None"
+  ClassName: "AnalogInput"
+  Construction: "#variable($Name) = new ${ClassName}(RobotConstants.$Analog_In_Pin);"
+  Import: "import edu.wpi.first.wpilibj.AnalogInput;"

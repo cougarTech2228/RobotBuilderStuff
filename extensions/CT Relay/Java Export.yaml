@@ -1,0 +1,5 @@
+CT Relay:
+  Defaults: "Component,None"
+  ClassName: "Relay"
+  Construction: "#variable($Name) = new ${ClassName}(RobotConstants.$Relay_Pin);"
+  Import: "import edu.wpi.first.wpilibj.Relay;"

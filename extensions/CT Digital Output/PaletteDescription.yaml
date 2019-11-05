@@ -1,0 +1,10 @@
+!Component
+  name: CT Digital Output
+  type: Actuator
+  help: A digital output.
+  properties:
+    - !ChoicesProperty
+      name: "DIO Pin"
+      validators:
+      choices: [DIGITAL_IO_0, DIGITAL_IO_1, DIGITAL_IO_2, DIGITAL_IO_3, DIGITAL_IO_4, DIGITAL_IO_5, DIGITAL_IO_6, DIGITAL_IO_7, DIGITAL_IO_8, DIGITAL_IO_9]
+      default: DIGITAL_IO_0

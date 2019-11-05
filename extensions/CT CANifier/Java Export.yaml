@@ -1,0 +1,5 @@
+CT CANifier:
+  Defaults: "Component,None"
+  ClassName: "CANifier"
+  Construction: "#variable($Name) = new ${ClassName}(RobotConstants.$CAN_ID);"
+  Import: "import com.ctre.phoenix.CANifier;"

@@ -1,0 +1,5 @@
+CT Digital Input:
+  Defaults: "Component,None"
+  ClassName: "DigitalInput"
+  Construction: "#variable($Name) = new ${ClassName}(RobotConstants.$DIO_Pin);"
+  Import: "import edu.wpi.first.wpilibj.DigitalInput;"

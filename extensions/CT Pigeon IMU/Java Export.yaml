@@ -1,0 +1,5 @@
+CT Pigeon IMU:
+  Defaults: "Component,None"
+  ClassName: "PigeonIMU"
+  Construction: "#variable($Name) = new ${ClassName}(RobotConstants.$CAN_ID);"
+  Import: "import com.ctre.phoenix.sensors.PigeonIMU;"

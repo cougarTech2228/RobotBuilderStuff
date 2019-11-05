@@ -1,0 +1,10 @@
+!Component
+  name: CT Servo
+  type: Actuator
+  help: A PWM-based servo.
+  properties:
+    - !ChoicesProperty
+      name: "PWM Pin"
+      validators:
+      choices: [PWM_PIN_0, PWM_PIN_1, PWM_PIN_2, PWM_PIN_3, PWM_PIN_4, PWM_PIN_5, PWM_PIN_6, PWM_PIN_7, PWM_PIN_8, PWM_PIN_9]
+      default: PWM_PIN_0

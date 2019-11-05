@@ -1,0 +1,5 @@
+CT Potentiometer:
+  Defaults: "Component,None"
+  ClassName: "AnalogPotentiometer"
+  Construction: "#variable($Name) = new ${ClassName}(RobotConstants.$AnalogIn_Pin, $Full_Range, $Offset);"
+  Import: "import edu.wpi.first.wpilibj.AnalogPotentiometer;"

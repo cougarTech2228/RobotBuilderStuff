@@ -1,0 +1,10 @@
+!Component
+  name: CT Pigeon IMU
+  type: Sensor
+  help: A 9 degree-of-freedom IMU
+  properties:
+    - !ChoicesProperty
+      name: CAN ID
+      validators: [CANID]
+      choices: [PIGEON_IMU_CAN_ID]
+      default: PIGEON_IMU_CAN_ID

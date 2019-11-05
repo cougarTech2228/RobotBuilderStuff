@@ -1,0 +1,10 @@
+!Component
+  name: CT Xbox Controller
+  type: Joystick
+  help: An Xbox Controller.
+  properties:
+    - !ChoicesProperty
+      name: PORT
+      validators:
+      choices: ["0", "1"]
+      default: "0"

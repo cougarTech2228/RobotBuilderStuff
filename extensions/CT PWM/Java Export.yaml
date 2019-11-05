@@ -1,0 +1,5 @@
+CT PWM:
+  Defaults: "Component,None"
+  ClassName: "PWM"
+  Construction: "#variable($Name) = new ${ClassName}(RobotConstants.$PWM_Pin);"
+  Import: "import edu.wpi.first.wpilibj.PWM;"

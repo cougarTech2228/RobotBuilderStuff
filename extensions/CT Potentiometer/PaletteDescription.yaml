@@ -1,0 +1,18 @@
+!Component
+  name: CT Potentiometer
+  type: Sensor
+  help: A potentiometer.
+  properties:
+    - !ChoicesProperty
+      name: "AnalogIn Pin"
+      validators:
+      choices: [ANALOG_INPUT_0, ANALOG_INPUT_1, ANALOG_INPUT_2, ANALOG_INPUT_3]
+      default: ANALOG_INPUT_0
+    - !DoubleProperty
+      name: "Full Range"
+      validators:
+      default: 1.0
+    - !DoubleProperty
+      name: "Offset"
+      validators:
+      default: 0.0

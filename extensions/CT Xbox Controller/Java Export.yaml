@@ -1,0 +1,147 @@
+CT Xbox Controller:
+  Defaults: "Component,None"
+  ClassName: "XboxController"
+  Construction: "#variable($Name) = new ${ClassName}(#variable($PORT));"
+  Import: "import edu.wpi.first.wpilibj.XboxController;"
+  Export: "OI"
+  Function: "
+    public boolean getXboxAButton()
+    {
+        return #variable($Name).getAButton();
+    }
+
+    public boolean getXboxBButton()
+    {
+        return #variable($Name).getBButton();
+    }
+
+    public boolean getXboxXButton()
+    {
+        return #variable($Name).getXButton();
+    }
+
+    public boolean getXboxYButton()
+    {
+        return #variable($Name).getYButton();
+    }
+    
+    public boolean getXboxStartButton()
+    {
+        return #variable($Name).getStartButton();
+    }
+       
+    public boolean getXboxBackButton()
+    {
+        return #variable($Name).getBackButton();
+    }
+       
+    public boolean getXboxRightBumper()
+    {
+        return #variable($Name).getBumper(Hand.kRight);
+    }
+       
+    public boolean getXboxLeftBumper()
+    {
+        return #variable($Name).getBumper(Hand.kLeft);
+    }
+       
+    public boolean getXboxLeftJoystickPress()
+    {
+        return #variable($Name).getStickButton(Hand.kLeft);
+    }
+       
+    public boolean getXboxRightJoystickPress()
+    {
+        return #variable($Name).getStickButton(Hand.kRight);
+    }
+       
+    public double getXboxRightTrigger()
+    {
+        return #variable($Name).getTriggerAxis(Hand.kRight);
+    }
+       
+    public double getXboxLeftTrigger()
+    {
+        return #variable($Name).getTriggerAxis(Hand.kLeft);
+    }
+       
+    public double getXboxRightJoystickX()
+    {
+        return #variable($Name).getX(Hand.kRight);
+    }
+       
+    public double getXboxRightJoystickY()
+    {
+        return #variable($Name).getY(Hand.kRight);
+    }
+       
+    public double getXboxLeftJoystickX()
+    {
+        return #variable($Name).getX(Hand.kLeft);
+    }
+       
+    public double getXboxLeftJoystickY()
+    {
+        return #variable($Name).getY(Hand.kLeft);
+    }
+       
+    public boolean getXboxDpadUp()
+    {
+        int pov = #variable($Name).getPOV(0);
+        return (((pov >= 0) && (pov <= 45)) || ((pov >= 315) && (pov <= 360)));
+    }
+       
+    public boolean getXboxDpadRight()
+    {
+        int pov = #variable($Name).getPOV(0);
+        return ((pov >= 45) && (pov <= 135));
+    }
+       
+    public boolean getDpadDown()
+    {
+        int pov = #variable($Name).getPOV(0);
+        return ((pov >= 135) && (pov <= 225));
+    }
+          
+    public boolean getDpadLeft()
+    {
+        int pov = #variable($Name).getPOV(0);
+        return ((pov >= 225) && (pov <= 315));
+    }
+
+    public void setXboxRumbleSpeed(double rumbleSpeed)
+    {
+        #variable($Name).setRumble(RumbleType.kLeftRumble, rumbleSpeed);
+        #variable($Name).setRumble(RumbleType.kRightRumble, rumbleSpeed);
+    }
+       
+    public void setXboxLeftRumbleSpeed(double rumbleSpeed)
+    {
+        #variable($Name).setRumble(RumbleType.kLeftRumble, rumbleSpeed);
+    }
+          
+    public void setXboxRightRumbleSpeed(double rumbleSpeed)
+    {
+        #variable($Name).setRumble(RumbleType.kRightRumble, rumbleSpeed);
+    }
+   
+    public void setXboxRumbleStop()
+    {
+        this.setXboxRumbleSpeed(0);
+    }
+
+    public double getThrottleValue()
+    {
+        return this.getXboxLeftJoystickY();
+    }
+    
+    public double getStrafeValue()
+    {
+        return this.getXboxLeftJoystickX();
+    }
+    
+    public double getTurnValue()
+    {
+        return this.getXboxRightJoystickX();
+    }
+  "

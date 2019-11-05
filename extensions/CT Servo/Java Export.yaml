@@ -1,0 +1,5 @@
+CT Servo:
+  Defaults: "Component,None"
+  ClassName: "Servo"
+  Construction: "#variable($Name) = new ${ClassName}(RobotConstants.$PWM_Pin);"
+  Import: "import edu.wpi.first.wpilibj.Servo;"

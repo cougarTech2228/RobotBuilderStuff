@@ -1,0 +1,5 @@
+CT Digital Output:
+  Defaults: "Component,None"
+  ClassName: "DigitalOutput"
+  Construction: "#variable($Name) = new ${ClassName}(RobotConstants.$DIO_Pin);"
+  Import: "import edu.wpi.first.wpilibj.DigitalOutput;"

@@ -1,0 +1,10 @@
+!Component
+  name: CT Relay
+  type: Actuator
+  help: A relay.
+  properties:
+    - !ChoicesProperty
+      name: "Relay Pin"
+      validators:
+      choices: [RELAY_PIN_0, RELAY_PIN_1, RELAY_PIN_2, RELAY_PIN_3]
+      default: RELAY_PIN_0

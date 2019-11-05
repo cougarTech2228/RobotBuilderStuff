@@ -1,0 +1,10 @@
+!Component
+  name: CT CANifier
+  type: Sensor
+  help: An IO board for adding CAN to devices.
+  properties:
+    - !ChoicesProperty
+      name: CAN ID
+      validators: [CANID]
+      choices: [CANIFIER_CAN_ID]
+      default: CANIFIER_CAN_ID

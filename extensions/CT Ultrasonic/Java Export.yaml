@@ -1,0 +1,5 @@
+CT Ultrasonic:
+  Defaults: "Component,None"
+  ClassName: "Ultrasonic"
+  Construction: "#variable($Name) = new ${ClassName}(RobotConstants.$Trigger_Pin, RobotConstants.$Echo_Pin);"
+  Import: "import edu.wpi.first.wpilibj.Ultrasonic;"

@@ -1,0 +1,10 @@
+!Component
+  name: CT Analog Input
+  type: Sensor
+  help: An analog input.
+  properties:
+    - !ChoicesProperty
+      name: "Analog In Pin"
+      validators:
+      choices: [ANALOG_INPUT_0, ANALOG_INPUT_1, ANALOG_INPUT_2, ANALOG_INPUT_3]
+      default: ANALOG_INPUT_0
