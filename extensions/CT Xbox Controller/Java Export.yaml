@@ -129,19 +129,4 @@ CT Xbox Controller:
     {
         this.setXboxRumbleSpeed(0);
     }
-
-    public double getThrottleValue()
-    {
-        return this.getXboxLeftJoystickY();
-    }
-    
-    public double getStrafeValue()
-    {
-        return this.getXboxLeftJoystickX();
-    }
-    
-    public double getTurnValue()
-    {
-        return this.getXboxRightJoystickX();
-    }
   "
