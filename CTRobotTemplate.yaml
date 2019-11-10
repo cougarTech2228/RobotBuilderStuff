@@ -120,7 +120,7 @@ Children:
         validators: null
         value: '0'
     Base: CT Xbox Controller
-    Name: xbox
+    Name: xboxIF
   Properties: {}
   Base: OI
   Name: Operator Interface
@@ -171,7 +171,7 @@ Properties:
   Wiring file location: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\ksymo\',
     extension: null, folder: true, name: Wiring file location, validators: null, value: 'C:\Users\ksymo\'}
   Export Directory: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\ksymo\FRCProjects',
-    extension: null, folder: true, name: Export Directory, validators: null, value: 'C:\Users\ksymo\FRCProjects'}
+    extension: null, folder: true, name: Export Directory, validators: null, value: 'D:\RobotBuilder\RobotBuilderStuff'}
   Autonomous Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
     name: Autonomous Command, type: Command, validators: null, value: Autonomous Command}
 Base: Robot
