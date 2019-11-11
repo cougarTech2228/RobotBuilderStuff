@@ -8,6 +8,8 @@
  
  If the custom extensions have not been installed on the laptop/PC that you are using, you'll need to copy all of the folders from the extensions folder on GitHub to the "extensions" folder under the "Robotbuilder" folder that was created when RobotBuilder was first installed. The local RobotBuilder extensions folder can be found at C:\Users\{username}\Robotbuilder\extensions. You'll need to restart RobotBuilder for the custom extensions to be used.
  
+ Note: Any changes/updates to the extensions folder in the GitHub repository need to be copied back to the C:\Users\{username}\Robotbuilder\extensions folder for the changes to take effect since that's where RobotBuilder is started from.
+ 
 ## Template Files
  
  A set of template files have been created that the team can use as a starting point for a new robot project. CTRobotTemplate.yaml is the main file that RobotBuilder uses to store its project configuration. The CTRobotTemplate folder contains a Java robot project that mirrors what's stored in the CTRobotTemplate.yaml project file.
