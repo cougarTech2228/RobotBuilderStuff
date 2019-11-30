@@ -1,0 +1,63 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" type="text/css" media="screen" />
+  </head>
+
+  <body>
+      <h1>CT Rev 2M Sensor</h1>
+
+      <center><img src="./icon.png" /></center>
+
+    <h2>What is it?</h2>
+    <p>Rev Robotics 2M "Time of Flight" Distance Sensor (REV-31-1505).</p>
+
+
+    <h2>Properties</h2>
+
+    <dl>
+      <dt>Port</dt>
+      <dd>The distance sensor can be connected to the I2C bus connector on either the RoboRio or the MXP board. The choices are Port.kMXP or Port.kOnboard.</dd>
+    </dl>
+
+    <h2>Additional Libraries</h2>
+
+    <dl>
+      <dt>You must install additional libraries before you can use the distance sensor class.</dt>
+      <dd><br>Instructions for installing the libraries can be found here:<br><br>
+	  
+        <a href="https://github.com/REVrobotics/2m-Distance-Sensor/blob/master/README.md">RevRobotics GitHub ReadMe file</a><br><br>
+	 
+	  Note: One step in the instructions directs you to "merge" the maven folder in the downloaded zip file with the maven directory on your computer. That's not quite accurate. In the zip file, there was a maven/release/com/revrobotics folder. You only need to copy the revrobotics folder from the zip file to your PC's maven/com folder.<br><br> 
+	  
+	  The "vendordeps" and "maven" instruction steps will only be needed once on your PC.<br><br> 
+	  
+	  However each time you create a new project, you'll need to follow the portion of the instructions listed below:<br><br> 
+	  
+	  - Press Ctrl-Shift-P to open the WPI commands window.<br>
+	  - Select WPILib: Manage Vendor Libraries<br> 
+	  - Select Install new libraries (offline)<br>
+      - Select the check box next to REV2mDistanceSensor and press OK<br><br>
+	  
+	  Also, we noticed that after installing the libraries and successfully compiling the code which imported the revrobotics libraries, VSCode still showed the red squiggly lines under the imports as if they were not found. Strange since the code builds and runs successfully. To get rid of this condition, we had to run the "Java:Clean the Java language server workspace" from the VSCode Command Palette.</dd>
+    </dl>
+	
+	<dl>
+      <dt>Other Considerations</dt>
+      <dd><br>/* Before measurements can be read from the sensor, setAutomaticMode(true) must be called. This starts a background thread which will periodically poll all enabled sensors and store their measured range. This should only be called once in an init method. */<br>
+        distanceSensor.setAutomaticMode(true);<br><br>
+	    /* Call Something like this from the periodic method */<br>
+		if (distanceSensor.isRangeValid()) {<br>
+            SmartDashboard.putNumber("Range MXP", distanceSensor.getRange());<br>
+            SmartDashboard.putNumber("Timestamp MXP", distanceSensor.getTimestamp());<br>
+        }</dd>
+    </dl>
+	
+    <h2>See Also</h2>
+    <ul>
+	  <li>
+        <a href="https://github.com/REVrobotics/2m-Distance-Sensor">RevRobotics GitHub Project</a>
+      </li>
+    </ul>
+  </body>
+
+</html>

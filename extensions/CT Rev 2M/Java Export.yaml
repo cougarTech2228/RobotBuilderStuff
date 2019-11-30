@@ -1,0 +1,6 @@
+CT Rev 2M:
+  Defaults: "Component,None"
+  ClassName: "Rev2mDistanceSensor"
+  Construction: "#variable($Name) = new ${ClassName}($PORT);"
+  Import: "import com.revrobotics.*;"
+  Import: "import com.revrobotics.Rev2mDistanceSensor.Port;"

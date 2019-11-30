@@ -1,0 +1,10 @@
+!Component
+  name: CT Rev 2M
+  type: Sensor
+  help: A distance sensor.
+  properties:
+    - !ChoicesProperty
+      name: "PORT"
+      validators:
+      choices: [Port.kOnboard, Port.kMXP]
+      default: Port.kOnboard
