@@ -12,19 +12,19 @@
  
 ## Template Files
  
- A set of template files have been created that the team can use as a starting point for a new robot project. CTRobotTemplate.yaml is the main file that RobotBuilder uses to store its project configuration. The CTRobotTemplate folder contains a Java robot project that mirrors what's stored in the CTRobotTemplate.yaml project file.
+ A set of template files have been created that the team can use as a starting point for a new robot project. CTRobotTemplate.yaml is the main file that RobotBuilder uses to store its project configuration. The CTRobotTemplate folder contains a Java robot project that mirrors what's defined in the CTRobotTemplate.yaml project file.
  
- To use the template files, copy the CTRobotTemplate.yaml file from GitHub into the FRCProjects folder that's created when RobotBuilder was installed. This folder can be found at C:\Users\{username}\FRCProjects. Copy the CTRobotTemplate folder from GitHub into the same FRCProjects folder.
+ To use the template files, copy the CTRobotTemplate.yaml file from GitHub into you project development folder (e.g. "C:\RobotProjects\"). Also copy the CTRobotTemplate folder from GitHub into the same folder. You should now have something like "C:\RobotProjects\CTRobotTemplate.yaml" and "C:\RobotProjects\CTRobotTemplate\" on your machine.
  
- We need to rename the template files to something more meaningful. For example, rename the CTRobotTemplate.yaml file to "InfiniteRecharge.yaml" and the CTRobotTemplate folder to "InfiniteRecharge". Now you should have something like ..\FRCProjects\InfiniteRecharge.yaml and the folder ..\FRCProjects\InfiniteRecharge.
+ We need to rename the template files to something more meaningful. For example, rename the CTRobotTemplate.yaml file to "InfiniteRecharge.yaml" and the CTRobotTemplate folder to "InfiniteRecharge". Now you should have something like "C:\RobotProjects\InfiniteRecharge.yaml" and the folder "C:\RobotProjects\InfiniteRecharge\".
  
  Start VSCode and open the newly renamed folder (e.g. "InfiniteRecharge"). You'll see a few errors and that's to be expected because we need to rename a few things in the Java project. 
  
- In the project tree, you'll see an entry/node labeled "CTRobotTemplate". Right-click on the entry/node and rename it to your new project name (i.e., "InfiniteRecharge"). 
+ In the project file tree, you'll see an entry/node labeled "CTRobotTemplate". Right-click on the entry/node and rename it to your new project name (i.e., "InfiniteRecharge"). 
  
  There are still a few items in the project that need to be renamed. To do this, select "Replace in Files" from the VS Code Edit menu. Search for "CTRobotTemplate" and Replace that string with "InfiniteRecharge" or whatever you named your new project. There should be 11 occurrences in 7 files that get replaced. The code should build successfully now.
  
- Start RobotBuilder and open the newly renamed project file (e.g., "InfiniteRecharge.yaml"). In the folder tree, select the top folder "CTRobotTemplate". In the Properties Pane on the right, change "CTRobotTemplate" to "InfiniteRecharge".
+ Start the RobotBuilder app from VS Code's "Start Tool" menu item and open the newly renamed project file (e.g., "InfiniteRecharge.yaml"). In the folder tree, select the top folder "CTRobotTemplate". In the Properties Pane on the right, in the Name field, change "CTRobotTemplate" to "InfiniteRecharge" and press Enter. Change the path in the Export Directory field to the folder that contains the tempate files you copied and renamed from GitHub (e.g. "C:\RobotProjects\"). This tells RobotBuilder where to export the generated Java files.
  
  At this point you should be able to update your project by adding Subsystems, Commands, Inputs, Outputs, etc. and then generate code for your Java project.
  
