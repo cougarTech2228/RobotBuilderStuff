@@ -16,7 +16,7 @@
  
  To use the template files, copy the CTRobotTemplate.yaml file from GitHub into you project development folder (e.g. "C:\RobotProjects\"). Also copy the CTRobotTemplate folder from GitHub into the same folder. You should now have something like "C:\RobotProjects\CTRobotTemplate.yaml" and "C:\RobotProjects\CTRobotTemplate\" on your machine.
  
- ![Template Files](https://github.com/cougarTech2228/RobotBuilderStuff/ReadMeImages/TemplateFiles.png)
+ ![Template Files](/ReadMeImages/TemplateFiles.png)
  
  We need to rename the template files to something more meaningful. For example, rename the CTRobotTemplate.yaml file to "InfiniteRecharge.yaml" and the CTRobotTemplate folder to "InfiniteRecharge". Now you should have something like "C:\RobotProjects\InfiniteRecharge.yaml" and the folder "C:\RobotProjects\InfiniteRecharge\".
  
