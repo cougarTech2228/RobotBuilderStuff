@@ -26,7 +26,7 @@
  
  In the project file tree, you'll see an entry/node labeled "CTRobotTemplate". Right-click on the entry/node and rename it to your new project name (i.e., "InfiniteRecharge"). See image below. 
  
-  ![Renamed Root Node](/ReadMeImages/RenamedRootNode.png)
+  ![Renamed Root Node](/ReadMeImages/RenameRootNode.png)
   
  There are still a few items in the project that need to be renamed. To do this, select "Replace in Files" from the VS Code Edit menu. Search for "CTRobotTemplate" and Replace that string with "InfiniteRecharge" or whatever you named your new project. There should be 11 occurrences in 7 files that get replaced. Tap the button in the green circle (see image below) to perform the replace function. The code should build successfully now.
  
