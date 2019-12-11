@@ -20,25 +20,25 @@
  
  We need to rename the template files to something more meaningful. For example, rename the CTRobotTemplate.yaml file to "InfiniteRecharge.yaml" and the CTRobotTemplate folder to "InfiniteRecharge". Now you should have something like "C:\RobotProjects\InfiniteRecharge.yaml" and the folder "C:\RobotProjects\InfiniteRecharge\".
  
- ![Renamed Template Files](https://github.com/cougarTech2228/RobotBuilderStuff/ReadMeImages/RenamedTemplateFiles.png)
+ ![Renamed Template Files](/ReadMeImages/RenamedTemplateFiles.png)
  
  Start VSCode and open the newly renamed folder (e.g. "InfiniteRecharge"). We need to rename a few things in the Java project. 
  
  In the project file tree, you'll see an entry/node labeled "CTRobotTemplate". Right-click on the entry/node and rename it to your new project name (i.e., "InfiniteRecharge"). See image below. 
  
-  ![Renamed Root Node](https://github.com/cougarTech2228/RobotBuilderStuff/ReadMeImages/RenamedRootNode.png)
+  ![Renamed Root Node](/ReadMeImages/RenamedRootNode.png)
   
  There are still a few items in the project that need to be renamed. To do this, select "Replace in Files" from the VS Code Edit menu. Search for "CTRobotTemplate" and Replace that string with "InfiniteRecharge" or whatever you named your new project. There should be 11 occurrences in 7 files that get replaced. Tap the button in the green circle (see image below) to perform the replace function. The code should build successfully now.
  
- ![Renamed Files](https://github.com/cougarTech2228/RobotBuilderStuff/ReadMeImages/RenamedFiles.png)
+ ![Renamed Files](/ReadMeImages/RenamedFiles.png)
  
  Start the RobotBuilder app from VS Code's "Start Tool" menu item and open the newly renamed project file (e.g., "InfiniteRecharge.yaml"). In the folder tree, select the top folder "CTRobotTemplate". In the Properties Pane on the right, in the Name field, change "CTRobotTemplate" to "InfiniteRecharge" and press Enter. 
  
- ![Robot Builder Name Field](https://github.com/cougarTech2228/RobotBuilderStuff/ReadMeImages/RobotBuilderName.png)
+ ![Robot Builder Name Field](/ReadMeImages/RobotBuilderName.png)
  
  Change the path in the Export Directory field to the folder that contains the tempate files you copied and renamed from GitHub (e.g. "C:\RobotProjects\"). This tells RobotBuilder where to export the generated Java files.
  
- ![Robot Builder Export Directory](https://github.com/cougarTech2228/RobotBuilderStuff/ReadMeImages/RobotBuilderExport.png)
+ ![Robot Builder Export Directory](/ReadMeImages/RobotBuilderExport.png)
  
  At this point you should be able to update your project by adding Subsystems, Commands, Inputs, Outputs, etc. and then generate code for your Java project.
  
